@@ -12,7 +12,7 @@ export default function Header() {
     const { theme, setTheme } = useTheme();
 
     return (
-        <div className="flex align-middle items-center h-header m-auto w-xl px-4 justify-between">
+        <div className="flex align-middle items-center h-header m-auto px-4 justify-between">
             <h1>PWR</h1>
             <Toggle 
                 checked={theme === 'light'}

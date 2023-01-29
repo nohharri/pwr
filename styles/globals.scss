@@ -59,7 +59,7 @@ a {
     @apply 
       border-[1px] 
       py-4 
-      text-2xl 
+      text-lg 
       px-8 
       font-semibold 
       transition-all 
@@ -67,15 +67,19 @@ a {
       duration-200 
       active:brightness-90
       active:shadow-none
-      hover:brightness-105;
+      hover:brightness-105
+      md:text-2xl;
     border-radius: 30px;
   }
 }
 
 @layer utilities {
   .box {
-    @apply rounded-xl dark:bg-primary border border-gray-200 dark:border-primary-light;
-    padding: 3rem;
+    @apply rounded-xl 
+    dark:bg-primary border 
+    border-gray-200 
+    dark:border-primary-light
+    p-6;
   }
 
   .shadow {
