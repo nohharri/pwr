@@ -8,19 +8,22 @@ export default function MeetCoaches() {
             <h3 className="text-center mb-8">Discover our coaches&apos; journeys.</h3>
             <div className="flex flex-col sm:flex-row">
                 <CoachCard 
-                    coachName="Ryan Riske" 
+                    coachName="Ryan"
+                    lastName="Riske" 
                     imgSrc="/ryan_riske.png"
                     resultsSince={2020}
                     accolades={["~77bb win rate", "Avg Stake 1000NL"]}
                 />
                 <CoachCard 
-                    coachName="Andrew Ivers" 
+                    coachName="Andrew"
+                    lastName="Ivers" 
                     imgSrc="/andrew_ivers.png" 
                     resultsSince={2022}
                     accolades={["~6bb in rate", "Avg Stake 1000NL"]}
                 />
                 <CoachCard 
-                    coachName="Connor Armstrong" 
+                    coachName="Connor"
+                    lastName="Armstrong" 
                     imgSrc="/connor_armstrong.png" 
                     resultsSince={2020} 
                     accolades={["~77bb win rate", "Avg Stake 1000NL"]}

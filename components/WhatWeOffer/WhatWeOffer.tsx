@@ -22,7 +22,7 @@ function WhatWeOfferItem(props: {
     const { icon, text } = props;
     return (
         <div className="mx-8 text-center w-1/4 md:w-1/6">
-            <FontAwesomeIcon className="dark:text-primary-lighter" icon={icon} fontSize={100} /><p className="text-center m-4">{text}</p>
+            <FontAwesomeIcon className="dark:text-primary-lighter" icon={icon} fontSize={100} /><p className="my-4 text-center">{text}</p>
         </div>
     );
 }
