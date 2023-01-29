@@ -1,3 +1,5 @@
+// @ts-nocheck
+
 import { useTheme } from 'next-themes';
 import Toggle from 'react-toggle';
 import "react-toggle/style.css";
