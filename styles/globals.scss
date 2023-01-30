@@ -59,16 +59,16 @@ a {
     @apply 
       border-[1px] 
       py-4 
-      text-lg 
-      px-8 
+      text-lg
+      md:text-2xl
+      px-4 
       font-semibold 
       transition-all 
       ease-in-out 
       duration-200 
       active:brightness-90
       active:shadow-none
-      hover:brightness-105
-      md:text-2xl;
+      hover:brightness-105;
     border-radius: 30px;
   }
 }
