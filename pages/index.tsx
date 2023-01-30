@@ -8,6 +8,7 @@ import MeetCoaches from '@/components/MeetCoaches/MeetCoaches'
 import WhatWeOffer from '@/components/WhatWeOffer/WhatWeOffer'
 import ElevateYourGame from '@/components/ElevateYourGame/ElevateYourGame'
 import Footer from '@/components/Footer/Footer'
+import OurStudents from '@/components/OurStudents/OurStudents'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function Home() {
               <Header />
               <Landing />
               <MeetCoaches />
+              <OurStudents />
               <WhatWeOffer />
               <ElevateYourGame />
             </div>
