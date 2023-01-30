@@ -3,7 +3,7 @@ import Button from "@/components/Button/Button";
 
 export default function Landing() {
     return (
-        <div className="flex m-auto align-middle items-center max-h-xl h-[calc(100vh-80px)]">
+        <div className="flex m-auto align-middle items-center max-h-xl sm:h-[calc(100vh-80px)]">
             <div>
                 <div className="box shadow">
                     <h1><span className="text-secondary">Simplify,</span> don&apos;t sacrifice.</h1>
