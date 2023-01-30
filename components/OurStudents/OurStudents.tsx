@@ -14,8 +14,8 @@ function CarouselItem(props: { testimonial:string, name: string, imgSrc: string 
     const { testimonial, imgSrc, name } = props;
     return (
         <SnapItem snapAlign="center" className="align-center" width="calc(100% - 20px)">
-            <div className="box shadow flex align-center items-center w-full mx-2">
-                <Image className="flex-grow self-center mr-4" alt="student" width={200} height={200} src={imgSrc} />
+            <div className="box shadow flex align-center items-center align-middle w-full mx-2 flex-col md:flex-row">
+                <Image className="self-center align-middle mr-4 mb-4" alt="student" width={200} height={200} src={imgSrc} />
                 <p className="text-left align-center">
                     <h2 className="text-center mb-4">{name}</h2>
                     <FontAwesomeIcon icon={faQuoteLeft}/><span className="mx-2">{testimonial}</span><FontAwesomeIcon icon={faQuoteRight} />
