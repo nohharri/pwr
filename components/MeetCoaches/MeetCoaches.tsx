@@ -40,7 +40,7 @@ const Coaches: Array<Coach> = [
         lastName: "Armstrong",
         imgSrc: "/connor_armstrong.png",
         resultsSince: 2020,
-        accolades: ["~5bb win rate", "Avg Stake 5000NL"],
+        accolades: ["~5bb win rate", "1000NL - 5000NL"],
         summary: Strings.ConnorArmstrongSummary,
         resultImgSrc: "/connor_results.png",
     },

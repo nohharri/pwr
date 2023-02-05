@@ -1,5 +1,6 @@
 // @ts-nocheck
 
+import Image from 'next/image';
 import { useTheme } from 'next-themes';
 import Toggle from 'react-toggle';
 import "react-toggle/style.css";
@@ -13,7 +14,7 @@ export default function Header() {
 
     return (
         <div className="flex align-middle items-center h-header m-auto px-4 justify-between">
-            <h1>PWR</h1>
+            <h1><Image className="dark:filter-white" width={60} height={60} alt="logo" src="/logo.svg" /></h1>
             <Toggle 
                 checked={theme === 'light'}
                 icons={{
