@@ -9,10 +9,10 @@ export default function Landing() {
                     <h1><span className="text-secondary">Simplify,</span> don&apos;t sacrifice.</h1>
                     <p className="my-8">{Strings.Landing}</p>
                     <div className="flex">
-                    <Button className="bg-secondary border-secondary-lighter shadow mr-4 text-white">
+                    <Button onClick={() => { window.location.href = Strings.Typeform }} className="bg-secondary border-secondary-lighter shadow mr-4 text-white">
                         {Strings.ApplyNow}
                     </Button>
-                    <Button className="bg-primary border-primary-light shadow text-white">{Strings.WhatWeOffer}</Button>
+                    <Button onClick={() => window.location.href = "#WhatWeOffer" } className="bg-primary border-primary-light shadow text-white">{Strings.WhatWeOffer}</Button>
                     </div>
                 </div>
             </div>

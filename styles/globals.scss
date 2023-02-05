@@ -20,6 +20,7 @@ body {
   max-width: 100vw;
   overflow-x: hidden;
   font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -84,5 +85,23 @@ a {
 
   .shadow {
     box-shadow: -1px 22px 40px -5px rgba(0,0,0,0.25);
+  }
+
+  .modal-bg {
+    @apply fixed w-full h-full bg-opacity-50 bg-black;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    top: 0;
+    left: 0;
+  }
+
+  .modal {
+    @apply rounded-xl m-2 p-4 dark:bg-primary bg-white;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }

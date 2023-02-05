@@ -30,7 +30,9 @@ function WhatWeOfferItem(props: {
 export default function WhatWeOffer() {
     return (
         <Fade delay={500} triggerOnce>
-            <h1 className="text-center mt-20 mb-8"><span className="text-secondary">What</span> We Offer</h1> 
+            <a id="WhatWeOffer">
+                <h1 className="text-center mt-20 mb-8"><span className="text-secondary">What</span> We Offer</h1> 
+            </a>
             <div className="box shadow flex flex-col">
             <Fade cascade triggerOnce damping={0.2}>
                 <div className="flex flex-wrap justify-center">

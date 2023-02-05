@@ -9,6 +9,8 @@ import WhatWeOffer from '@/components/WhatWeOffer/WhatWeOffer'
 import ElevateYourGame from '@/components/ElevateYourGame/ElevateYourGame'
 import Footer from '@/components/Footer/Footer'
 import OurStudents from '@/components/OurStudents/OurStudents'
+import OurCommunity from '@/components/OurCommunity/OurCommunity'
+import SelectionProcess from '@/components/SelectionProcess/SelectionProcess'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,8 +29,10 @@ export default function Home() {
               <Header />
               <Landing />
               <MeetCoaches />
+              <OurCommunity />
               <OurStudents />
               <WhatWeOffer />
+              <SelectionProcess />
               <ElevateYourGame />
             </div>
             <Footer />
