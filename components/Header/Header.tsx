@@ -14,7 +14,10 @@ export default function Header() {
 
     return (
         <div className="flex align-middle items-center h-header m-auto px-4 justify-between">
-            <h1><Image className="dark:filter-white" width={60} height={60} alt="logo" src="/logo.svg" /></h1>
+            <div className="flex">
+            <Image className="dark:filter-white" width={60} height={60} alt="logo" src="/logo.svg" />
+            <h1 className="whitespace-nowrap ml-2">PWR</h1>
+            </div>
             <Toggle 
                 checked={theme === 'light'}
                 icons={{

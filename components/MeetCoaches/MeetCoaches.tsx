@@ -86,9 +86,9 @@ export default function MeetCoaches() {
             onClose={() => setIsOpen(false)}>
             {currentCoach && 
             (
-                <div className="overflow-y-scroll relative top-0 bottom-0">
+                <div className="relative top-0 bottom-0">
                     <h2 className="text-center mb-4">{currentCoach.coachName}</h2>
-                <div className="flex items-center justify-center overflow-y-scroll">
+                <div className="flex items-center justify-center">
                     <Image alt="results" src={currentCoach.resultImgSrc} width={300} height={300} className="rounded-xl" />
                 </div>
                 <p className="mt-4">{currentCoach.summary}</p>
