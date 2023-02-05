@@ -14,7 +14,7 @@ export default function Modal(props: { isOpen: boolean, children?: any, onClose:
 
     return isOpen ? (
         <div className="modal-bg" onClick={onClose}>
-            <animated.div  className="modal shadow" style={style}>
+            <animated.div  className="modal shadow overflow-y-scroll overflow-x-auto" style={style}>
                 <div onClick={onClose}><FontAwesomeIcon icon={faX} className="text-primary dark:text-white text-lg" /></div>
                 {children}
             </animated.div>

@@ -97,11 +97,16 @@ a {
   }
 
   .modal {
-    @apply rounded-xl m-2 p-4 dark:bg-primary bg-white;
+    @apply rounded-xl m-2 p-4 
+    dark:bg-primary 
+    bg-white 
+    sm:left-2/4 
+    sm:top-2/4 
+    sm:-translate-x-2/4 
+    sm:-translate-y-2/4
+    overflow-y-scroll
+    max-h-full;
     position: fixed;
     z-index: 1000;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
   }
 }

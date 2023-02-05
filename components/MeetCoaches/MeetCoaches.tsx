@@ -22,7 +22,7 @@ const Coaches: Array<Coach> = [
         lastName: "Riske",
         imgSrc: "/ryan_riske.png",
         resultsSince: 2020,
-        accolades: ["~77bb win rate", "Avg Stake 1000NL"],
+        accolades: ["~7bb win rate", "Avg Stake 1000NL"],
         summary: Strings.RyanRiskeSummary,
         resultImgSrc: "/ryan_results.png",
     },
@@ -31,7 +31,7 @@ const Coaches: Array<Coach> = [
         lastName: "Ivers",
         imgSrc: "/andrew_ivers.png",
         resultsSince: 2022,
-        accolades: ["~6bb in rate", "Avg Stake 1000NL"],
+        accolades: ["~6bb win rate", "Avg Stake 1000NL"],
         summary: Strings.AndrewIversSummary,
         resultImgSrc: "/andrew_results.png",
     },
@@ -40,7 +40,7 @@ const Coaches: Array<Coach> = [
         lastName: "Armstrong",
         imgSrc: "/connor_armstrong.png",
         resultsSince: 2020,
-        accolades: ["~77bb win rate", "Avg Stake 1000NL"],
+        accolades: ["~5bb win rate", "Avg Stake 5000NL"],
         summary: Strings.ConnorArmstrongSummary,
         resultImgSrc: "/connor_results.png",
     },
@@ -86,10 +86,9 @@ export default function MeetCoaches() {
             onClose={() => setIsOpen(false)}>
             {currentCoach && 
             (
-                <div>
+                <div className="overflow-y-scroll relative top-0 bottom-0">
                     <h2 className="text-center mb-4">{currentCoach.coachName}</h2>
-                <div className="flex items-center justify-center">
-                    <Image alt="coach" src={currentCoach.imgSrc} width={200} height={200} className="mr-4" />
+                <div className="flex items-center justify-center overflow-y-scroll">
                     <Image alt="results" src={currentCoach.resultImgSrc} width={300} height={300} className="rounded-xl" />
                 </div>
                 <p className="mt-4">{currentCoach.summary}</p>
