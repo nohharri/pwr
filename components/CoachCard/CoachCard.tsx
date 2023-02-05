@@ -22,7 +22,8 @@ export default function CoachCard(props: {
         onClick,
     } = props;
     return (
-        <animated.div style={{...springs}} onClick={onClick} className="flex flex-col box shadow w-full my-2 sm:m-2 items-center hover:cursor-pointer">
+        <animated.div style={{...springs}} onClick={onClick} 
+            className="flex flex-col box shadow w-full my-2 sm:m-2 items-center hover:cursor-pointer transition-all hover:scale-105">
             <h2 className="text-3xl lg:text-4xl text-center">{coachName}</h2>
             <h2 className="mb-4 text-3xl lg:text-4xl">{lastName}</h2>
             <Image width={200} height={200} src={imgSrc} alt="profile-pics" />
