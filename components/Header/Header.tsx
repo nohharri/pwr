@@ -6,11 +6,16 @@ import Toggle from 'react-toggle';
 import "react-toggle/style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
+import { useEffect } from 'react';
 
 
 
 export default function Header() {
     const { theme, setTheme } = useTheme();
+
+    useEffect(() => {
+        setTheme((theme && theme === 'light') ? 'light' : 'dark');
+    }, []);
 
     return (
         <div className="flex align-middle items-center h-header m-auto px-4 justify-between">
@@ -18,13 +23,12 @@ export default function Header() {
             <Image className="dark:filter-white" width={60} height={60} alt="logo" src="/logo.svg" />
             <h1 className="whitespace-nowrap ml-2">PWR</h1>
             </div>
-            <Toggle 
-                checked={theme === 'light'}
-                icons={{
-                    unchecked: <FontAwesomeIcon fontSize={12} icon={faSun} />,
-                    checked: <FontAwesomeIcon fontSize={12} icon={faMoon} />,
-                }}
-                onChange={(e: any) => setTheme(e.target.checked ? 'light' : 'dark') } />
+            <div onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
+                {theme === 'dark' ? 
+                    <FontAwesomeIcon fontSize={20} icon={faSun} /> :
+                    <FontAwesomeIcon fontSize={20} icon={faMoon} />
+                }
+            </div>
         </div>
     );
 }

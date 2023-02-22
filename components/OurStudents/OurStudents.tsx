@@ -34,8 +34,8 @@ export default function OurStudents() {
                 <h1 className="text-center mt-16">Our <span className="text-secondary">Students</span></h1>
                 <SnapList direction="horizontal" scrollPadding={{ left: "20px", right: "20px" }} className="w-full">
                     <CarouselItem testimonial={Strings.TestimonialJakeMarples} name="Jake Marples" imgSrc="/jake_marples.png" />
-                    <CarouselItem testimonial={Strings.TestimonialAdam} name="Adam" imgSrc="/jake_marples.png" />
-                    <CarouselItem testimonial={Strings.TestimonialChrisD} name="Chris D" imgSrc="/jake_marples.png" />
+                    <CarouselItem testimonial={Strings.TestimonialGrant} name="Grant" imgSrc="/grant.png" /> 
+                    <CarouselItem testimonial={Strings.TestimonialMathias} name="Mathias" imgSrc="/mathias.png" />
                 </SnapList>
             </Fade>
         </div>
