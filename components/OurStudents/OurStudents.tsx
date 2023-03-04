@@ -26,7 +26,7 @@ function CarouselItem(props: {
                     <h2 className="text-center mb-4">{name}</h2>
                     <div className="flex align-center items-center align-middle w-full mx-2 flex-col md:flex-row">
                         <div className="w-[200px] flex-shrink-0">
-                            <Image className="self-center align-middle mr-4 mb-4" alt="student" src={imgSrc} />
+                            <Image className="self-center align-middle mr-4 mb-4" alt="student" width={400} height={400} src={imgSrc} />
                             {onOpen && <Button className="bg-primary border-primary-light my-4 text-white" onClick={onOpen}>View Results</Button>}
                         </div>
                         <p className="text-left align-center px-4">

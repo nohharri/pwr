@@ -87,6 +87,7 @@ a {
 
   .shadow {
     box-shadow: -1px 22px 40px -5px rgba(0,0,0,0.25);
+    @apply shadow-none;
   }
 
   .modal-bg {

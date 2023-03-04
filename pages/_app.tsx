@@ -9,7 +9,7 @@ import Header from '@/components/Header/Header'
 export default function App({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider enableSystem={false} attribute='class'>
-            <div className="bg-gradient-to-r dark:from-primary dark:to-primary-dark m-auto">
+            <div className="bg-gradient-to-r bg-gray-100 dark:from-primary dark:to-primary-dark m-auto">
                 <div className="align-middle items-center m-auto h-full">
                     <div className="m-auto w-xl max-w-full"></div>
                     <Header />
