@@ -63,39 +63,39 @@ export default function MeetCoaches() {
 
     return (
         <div>
-        <Fade delay={500} triggerOnce>
-            <h1 className="text-center">Meet your <span className="text-secondary">Coaches</span></h1>
-            <h3 className="text-center mb-8">Discover our coaches&apos; journeys.</h3>
-            <div className="flex flex-col sm:flex-row">
-                {Coaches.map((val, idx) => (
-                  <CoachCard
-                    key={`coach-${idx}`}
-                    coachName={val.coachName}
-                    lastName={val.lastName}
-                    imgSrc={val.imgSrc}
-                    resultsSince={val.resultsSince}
-                    accolades={val.accolades}
-                    springs={springs}
-                    onClick={() => onCoachClick(val)}
-                   />  
-                ))}
-            </div>
-        </Fade>
-        <Modal 
-            isOpen={isOpen} 
-            onClose={() => setIsOpen(false)}>
-            {currentCoach && 
+            <Fade delay={500} triggerOnce>
+                <h1 className="text-center">Meet your <span className="text-secondary">Coaches</span></h1>
+                <h3 className="text-center mb-8">Discover our coaches&apos; journeys.</h3>
+                <div className="flex flex-col sm:flex-row">
+                    {Coaches.map((val, idx) => (
+                        <CoachCard
+                            key={`coach-${idx}`}
+                            coachName={val.coachName}
+                            lastName={val.lastName}
+                            imgSrc={val.imgSrc}
+                            resultsSince={val.resultsSince}
+                            accolades={val.accolades}
+                            springs={springs}
+                            onClick={() => onCoachClick(val)}
+                        />  
+                    ))}
+                </div>
+            </Fade>
+            <Modal 
+                isOpen={isOpen} 
+                onClose={() => setIsOpen(false)}>
+                {currentCoach && 
             (
                 <div className="relative top-0 bottom-0">
                     <h2 className="text-center mb-4">{currentCoach.coachName}</h2>
-                <div className="flex items-center justify-center">
-                    <Image alt="results" src={currentCoach.resultImgSrc} width={300} height={300} className="rounded-xl" />
-                </div>
-                <p className="mt-4">{currentCoach.summary}</p>
+                    <div className="flex items-center justify-center">
+                        <Image alt="results" src={currentCoach.resultImgSrc} width={300} height={300} className="rounded-xl" />
+                    </div>
+                    <p className="mt-4">{currentCoach.summary}</p>
                 </div>
             )
-            }
-        </Modal>
+                }
+            </Modal>
         </div>
     )
 }

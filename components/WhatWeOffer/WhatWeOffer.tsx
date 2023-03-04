@@ -34,8 +34,8 @@ export default function WhatWeOffer() {
                 <h1 className="text-center mt-20 mb-8"><span className="text-secondary">What</span> We Offer</h1> 
             </a>
             <div className="box shadow flex flex-col">
-            <Fade cascade triggerOnce damping={0.2}>
-                <div className="flex flex-wrap justify-center">
+                <Fade cascade triggerOnce damping={0.2}>
+                    <div className="flex flex-wrap justify-center">
                         <WhatWeOfferItem icon={faPersonChalkboard} text="1:1 Coaching" />
                         <WhatWeOfferItem icon={faPerson} text="Additional one-on-ones based on volume thresholds" />
                         <WhatWeOfferItem icon={faPeopleGroup} text="2 group coaching sessions per week" />
@@ -44,8 +44,8 @@ export default function WhatWeOffer() {
                         <WhatWeOfferItem icon={faBook} text="Access to our video library, exclusive PDF's, and past training sessions" />
                         <WhatWeOfferItem icon={faLineChart} text="GTO preflop ranges/ PIO solver parameters/ HM2 /PT4 HUDS" />
                         <WhatWeOfferItem icon={faPeopleRoof} text="Community of like-minded poker players" />
-                </div>
-            </Fade>
+                    </div>
+                </Fade>
             </div>
         </Fade>
     )

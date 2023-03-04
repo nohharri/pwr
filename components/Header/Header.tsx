@@ -7,6 +7,7 @@ import "react-toggle/style.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 import { useEffect } from 'react';
+import Link from 'next/link';
 
 
 
@@ -15,13 +16,13 @@ export default function Header() {
 
     useEffect(() => {
         setTheme((theme && theme === 'light') ? 'light' : 'dark');
-    }, []);
+    });
 
     return (
         <div className="flex align-middle items-center h-header m-auto px-4 justify-between">
             <div className="flex">
-            <Image className="dark:filter-white" width={60} height={60} alt="logo" src="/logo.svg" />
-            <h1 className="whitespace-nowrap ml-2">PWR</h1>
+                <Image className="dark:filter-white" width={60} height={60} alt="logo" src="/logo.svg" />
+                <Link href="/"><h1 className="whitespace-nowrap ml-2">PWR</h1></Link>
             </div>
             <div onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}>
                 {theme === 'dark' ? 

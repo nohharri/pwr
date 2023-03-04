@@ -8,9 +8,9 @@ export default function Modal(props: { isOpen: boolean, children?: any, onClose:
         isOpen,
         children,
         onClose,
-     } = props;
+    } = props;
 
-     const style = useSpring({ opacity: isOpen ? 1 : 0, from: { opacity: 0 }});
+    const style = useSpring({ opacity: isOpen ? 1 : 0, from: { opacity: 0 }});
 
     return isOpen ? (
         <div className="modal-bg" onClick={onClose}>
@@ -19,5 +19,5 @@ export default function Modal(props: { isOpen: boolean, children?: any, onClose:
                 {children}
             </animated.div>
         </div>
-        ) : <div></div>;
+    ) : <div></div>;
 }
