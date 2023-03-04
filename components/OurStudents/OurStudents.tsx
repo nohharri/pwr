@@ -55,7 +55,7 @@ export default function OurStudents() {
                 <Carousel showArrows>
                     <CarouselItem 
                         testimonial={Strings.TestimonialJakeMarples} 
-                        name="Jake Marples" 
+                        name="Jake" 
                         imgSrc="/jake_marples.png" 
                         onOpen={() => openModal("/jake_results.png")}
                     />
