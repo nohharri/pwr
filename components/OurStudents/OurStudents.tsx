@@ -63,6 +63,7 @@ export default function OurStudents() {
                         testimonial={Strings.TestimonialGrant} 
                         name="Grant" 
                         imgSrc="/grant.png"
+                        onOpen={() => openModal("/grant_results.png")}
                     /> 
                     <CarouselItem 
                         testimonial={Strings.TestimonialMathias} 
